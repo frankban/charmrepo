@@ -36,10 +36,13 @@ type Channel string
 
 const (
 	// DevelopmentChannel is the channel used for charms or bundles under development.
-	DevelopmentChannel Channel = "development"
+	DevelopmentChannel Channel = "edge"
 
 	// StableChannel is the channel used for stable charms or bundles.
 	StableChannel Channel = "stable"
+
+	CandidateChannel Channel = "candidate"
+	BetaChannel      Channel = "beta"
 
 	// UnpublishedChannel is the default channel to which charms are uploaded.
 	UnpublishedChannel Channel = "unpublished"
